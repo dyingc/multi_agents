@@ -1,4 +1,5 @@
 [Reference](https://levelup.gitconnected.com/how-to-build-a-multi-agent-supervisor-system-with-langgraph-qwen-streamlit-2aabed617468)
+[Github link](https://github.com/Mercytopsy/AI-Health-Supervisor-Agent)
 
 # Multi-Agent Supervisor System with LangGraph, Qwen, and Streamlit
 This project demonstrates how to build a multi-agent supervisor system using LangGraph, Qwen, and Streamlit. The system is designed to manage multiple agents that can perform tasks based on user input.
@@ -48,3 +49,31 @@ EXERCISE_API_KEY=xxxxxxxx
 DIET_API_KEY=xxxxxxxxxxxx
 ```
 
+# Step 3: Create State
+In building our AI Health Assistant, one of the first things we need to set up is the state. The state plays a crucial role in helping our agents keep track of conversation history as they interact and pass tasks between each other throughout the workflow.
+
+
+# Step 4: Create Custom Tools
+Earlier, we obtained API keys from API-Ninjas (for exercise data) and Spoonacular (for food and nutrition data). Now it’s time to put those to use by creating custom tools for our agents. These tools are what the agent will call on to carry out their tasks.
+
+
+# Step 5: Define LLM
+Here, we’ll define our large language model, which is the Qwen2.5:14b model. This model is well-suited for building intelligent agents.
+
+
+# Step 6: Creating the Agent & Nodes
+In this step, we will create our nodes and agents, where we make use of the prebuilt `create_react_agent` in LangGraph.
+
+
+# Step 7: Build Multi-Agent Graph
+Now, we build the workflow graph, where we add the supervisor node as the starting point of the execution. After that, we add the remaining agent nodes.
+
+![Multi-Agent Graph](./imgs/multi_agent_graph.png)
+
+
+# Step 8: Test the Multi-Agent System
+At this stage, our multi-agent system is fully set up and ready to receive user input. Before sending the input, let’s first define a helper function to extract the agents’ output
+
+Here’s what the result looks like in the Streamlit app.
+![Result 1](./imgs/result_1.png)
+![Result 2](./imgs/result_2.png)

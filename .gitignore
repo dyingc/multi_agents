@@ -166,6 +166,8 @@ python_envs
 .*.swp
 .langgraph_api/
 tmp/
+logs/
 
 # Additional files
 requirements.txt
+*.DS_Store

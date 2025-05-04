@@ -1,0 +1,10 @@
+{
+  "graphs": {
+    "multi_agent_health_advisor": "./main.py:graph"
+  },
+  "env": ".env",
+  "python_version": "3.13",
+  "dependencies": [
+    "."
+  ]
+}
