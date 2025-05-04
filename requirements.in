@@ -1,0 +1,16 @@
+ipython
+langchain
+langchain-community
+langchain-core
+langchain-deepseek
+langchain-mcp-adapters
+langchain-ollama
+langchain-openai
+langgraph
+langgraph-cli[inmem]
+langsmith
+mcp[cli]
+pydantic
+python-dotenv
+requests
+typing_extensions
